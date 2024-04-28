@@ -1,72 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pertemuan ke-2 Layout Website</title>
-    </head>
-    <body>
-        <table border="1" width="100%">
-            <!-- mulai header -->
-            <tr>
-                <td colspan="4"><h1>RAINUSA Training Center</h1></td>
-            </tr>
-            <!-- akhir header -->
-            <!-- mulai navigasi -->
-            <tr>
-                <td align="center"><a href="index.html">HOME</a></td>
-                <td align="center"><a href="katalog.html">KATALOG</a></td>
-                <td align="center"><a href="about.html">ABOUT</a></td>
-                <td align="center">&nbsp;</td>
-            </tr>
-            <!-- akhir navigasi -->
-            <tr>
-                <!-- mulai sidebar -->
-                <td rowspan="3" align="center" valign="top">
-                    <a href="index.html">HOME </a><br>
-                    <a href="katalog.html">KATALOG </a><br>
-                    <a href="about.html">ABOUT</a>
-                </td>
-                <!-- akhir sidebar -->
-                 <!-- mulai konten -->
-                <td colspan="3" align="center">
-                    <img src="#" alt="Gambar">
-                </td>
-            </tr>
-            <tr>
-                <td align="center">Artikel 1</td>
-                <td align="center">Artikel 2</td>
-                <td align="center">Artikel 3</td>
-            </tr>
-            <!-- mulai form -->
-            <tr>
-                <td colspan="3">
-                    <table border="1" width="100%">
-                        <tr>
-                            <td>Nama</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Masukan</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <input type="button" value="Kirim">
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- akhir form -->
-            <!-- akhir konten -->
-            <!-- mulai footer -->
-            <tr>
-                <td colspan="4" align="center"><h5>Rainusa @ 2024</h5></td>
-            </tr>
-            <!-- akhir footer -->
-        </table>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pertemuan ke-3 Melayout dengan CSS</title>
+</head>
+<body>
+    <!-- div layout paling luar -->
+    <div class="badan-utama">
+
+        <!-- header website -->
+        <header>
+            <h2>WartOl</h2>
+            <p>Warteg Online untuk kita semua</p>
+        </header>
+        <!-- akhir header website -->
+
+        <!-- menu navigasi -->
+        <nav class="navigasi">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#berita">Menu</a></li>
+                <li><a href="#kontak">About</a></li>
+                <li><a href="#tentang">Store</a></li>
+            </ul>
+        </nav>
+        <!-- akhir menu navigasi -->
+
+        <!-- mulai banner -->
+        <div class="banner">
+            <img src="images/ayam.jpg" alt="Ayam goreng sambal">
+        </div>
+        <!-- akhir banner -->
+
+        <!-- mulai menu bagian kiri -->
+        <div class="menu-kiri">
+            <div class="kotak">
+                <h3>Pemesanan</h3>
+                <p>
+                    Isi form pemesanan denganKlik tombol di bawah ini
+                </p>
+                <a class="tombol tombol-pesan" href="#">Pesan</a>
+            </div>
+        </div>
+        <!-- akhir menu bagian kiri -->
+
+        <!-- mulai menu tengah -->
+        <div class="menu-tengah">
+            <div class="kotak">
+                <h3>Sate Kambing Wartol</h3>
+                <span class="tanggal-posting">
+                    Diposting pada 11.00wib, 28 April 2024
+                </span>
+                <img src="images/sate.jpg" alt="Sate ayam nikmat">
+                <p>
+                    Lorem impsum dolor sit, amet consectetur adipisicing elit
+                </p>
+                <a class="tombol tombol-lengkap" href="#">Selengkapnya</a>
+            </div>
+        </div>
+        <!-- akhir menu tengah -->
+
+        <!-- mulai menu kanan -->
+        <div class="menu-kanan">
+            <div class="kotak">
+                <h3>Jadwal buka</h3>
+                <img src="images/sate.jpg" alt="Sate ayam">
+
+                <h4 align="center">Jadwal Buka</h4>
+                <center>
+                    <p>Senin-sabtu 08.00 - 22.00 WIB</p>
+                </center>
+            </div>
+
+            <div class="kotak">
+                <h3>Berita terbaru</h3>
+                <nav class="menu-artikel">
+                    <ul>
+                        <li><a href="#">Khasiat Daging Kambing</a></li>
+                        <li><a href="#">Manu Makana Keluarga</a></li>
+                        <li><a href="#">Sejarah pembuatan sambal</a></li>
+                        <li><a href="#">Minuman pelepas dahaga</a></li>
+                        <li><a href="#">Ayam geprek gurih</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- akhir menu kanan -->
+
+        <!-- mulai footer -->
+        <footer>
+            @copyright 2024 || by AH
+        </footer>
+        <!-- akhir footer -->
+
+    </div>
+    <!-- akhir div layout paling luar -->
+
+</body>
 </html>
