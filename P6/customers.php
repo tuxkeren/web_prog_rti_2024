@@ -36,7 +36,7 @@
 <div class="container mt-5">
  
     <h1>Data Konsumen</h1>
-    <a class="btn btn-primary" href="product_new.php">Tambah Konsumen</a>
+    <a class="btn btn-primary" href="customer_new.php">Tambah Konsumen</a>
     <br><br>
     <div class="row">
     <table class="table table-hover">
