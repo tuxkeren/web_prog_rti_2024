@@ -49,13 +49,14 @@
 </nav>
 
 <div class="container mt-5">
-  <form action="product_save.php" method="post" enctype="multipart/form-data">
+  <form action="product_update.php" method="post" enctype="multipart/form-data">
     <div class="row">
       <div class="col">
         <label for="barcode" class="form-label">Barcode:</label>
         <input type="text" class="form-control" id="barcode" placeholder="Masukkan barcode barang" name="barcode" value ="<?php echo $prod->barcode; ?>">
       </div>
       <div class="col">
+      <input type="hidden" class="form-control" id="id" name="id" value =" <?php echo $prod->id; ?>">
         <label for="nama_barang" class="form-label">Nama Barang:</label>
         <input type="text" class="form-control" id="nama_barang" placeholder="Masukkan nama barang" name="nama_barang" value =" <?php echo $prod->product_name; ?>">
       </div>
