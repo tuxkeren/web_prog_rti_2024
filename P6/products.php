@@ -42,7 +42,8 @@
     <table class="table table-hover">
         <thead>
             <tr>
-            <th scope="col">ID</th>
+            <th scope="col">No</th> 
+            <th scope="col">Kode Barang</th>
             <th scope="col">&nbsp;</th>
             <th scope="col">Barcode</th>
             <th scope="col">Nama Produk</th>
@@ -64,11 +65,13 @@
                         die('Query error['. $db->error.']');
                     }
 
+                    $no =1;
                     while ($prod = $hasil -> fetch_object())
                     {      
         ?>
         <tbody>
             <tr>
+            <th scope="row"><?php echo $no; ?></th>
             <th scope="row"><?php echo $prod->id; ?></th>
             <td>
                 <img class="rounded" src="<?php echo "images/produk/".$prod->picture; ?>" height="200px" width="200px">
@@ -83,7 +86,7 @@
             </tr>
         </tbody>
         <?php
-                  } 
+               $no++;   } 
             }
         ?>
         </table>
