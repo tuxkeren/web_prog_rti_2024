@@ -34,7 +34,7 @@
 </nav>
 
 <div class="container mt-5">
-  <form action="product_save.php" method="post">
+  <form action="customer_save.php" method="post">
       <div class="row">
         <div class="col">
           <label for="nama_konsumen" class="form-label">Nama Konsumen:</label>
