@@ -34,7 +34,31 @@
 </nav>
 
 <div class="container mt-5">
-        
+  <form action="product_save.php" method="post">
+      <div class="row">
+        <div class="col">
+          <label for="nama_konsumen" class="form-label">Nama Konsumen:</label>
+          <input type="text" class="form-control" id="nama_konsumen" placeholder="Masukkan nama lengkap Konsumen">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label for="alamat" class="form-label">Alamat:</label>
+          <textarea class="form-control" placeholder="Masukkan alamat konsumen" id="alamat"></textarea>
+        </div>
+        <div class="col">
+          <label for="handphone" class="form-label">Handphone:</label>
+          <input type="text" class="form-control" id="handphone" placeholder="Masukkan no HP konsumen">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+        <input class="btn btn-success" type="submit" value="Simpan">
+        </div>
+      </div>
+  </form>
 </div>
 
 <div class="mt-5 p-4 bg-dark text-white text-center">

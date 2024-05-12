@@ -34,14 +34,35 @@
 </nav>
 
 <div class="container mt-5">
-    <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <form action="product_save.php" method="post">
+    <div class="row">
+      <div class="col">
+        <label for="barcode" class="form-label">Barcode:</label>
+        <input type="text" class="form-control" id="barcode" placeholder="Masukkan barcode barang">
+      </div>
+      <div class="col">
+        <label for="nama_barang" class="form-label">Nama Barang:</label>
+        <input type="text" class="form-control" id="nama_barang" placeholder="Masukkan nama barang">
+      </div>
     </div>
-    <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <br>
+    <div class="row">
+      <div class="col">
+        <label for="harga" class="form-label">Harga:</label>
+        <input type="text" class="form-control" id="harga" placeholder="Masukkan harga barang">
+      </div>
+      <div class="col">
+        <label for="gambar" class="form-label">Gambar:</label>
+        <input class="form-control" type="file" id="gambar">
+      </div>
     </div>
+    <br>
+    <div class="row">
+      <div class="col">
+      <input class="btn btn-success" type="submit" value="Simpan">
+      </div>
+    </div>
+  </form>
 </div>
 
 <div class="mt-5 p-4 bg-dark text-white text-center">
