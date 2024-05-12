@@ -34,26 +34,26 @@
 </nav>
 
 <div class="container mt-5">
-  <form action="product_save.php" method="post">
+  <form action="product_save.php" method="post" enctype="multipart/form-data">
     <div class="row">
       <div class="col">
         <label for="barcode" class="form-label">Barcode:</label>
-        <input type="text" class="form-control" id="barcode" placeholder="Masukkan barcode barang">
+        <input type="text" class="form-control" id="barcode" placeholder="Masukkan barcode barang" name="barcode">
       </div>
       <div class="col">
         <label for="nama_barang" class="form-label">Nama Barang:</label>
-        <input type="text" class="form-control" id="nama_barang" placeholder="Masukkan nama barang">
+        <input type="text" class="form-control" id="nama_barang" placeholder="Masukkan nama barang" name="nama_barang">
       </div>
     </div>
     <br>
     <div class="row">
       <div class="col">
         <label for="harga" class="form-label">Harga:</label>
-        <input type="text" class="form-control" id="harga" placeholder="Masukkan harga barang">
+        <input type="text" class="form-control" id="harga" placeholder="Masukkan harga barang" name="harga">
       </div>
       <div class="col">
         <label for="gambar" class="form-label">Gambar:</label>
-        <input class="form-control" type="file" id="gambar">
+        <input class="form-control" type="file" id="gambar" name="gambar">
       </div>
     </div>
     <br>

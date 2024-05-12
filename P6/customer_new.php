@@ -38,18 +38,18 @@
       <div class="row">
         <div class="col">
           <label for="nama_konsumen" class="form-label">Nama Konsumen:</label>
-          <input type="text" class="form-control" id="nama_konsumen" placeholder="Masukkan nama lengkap Konsumen">
+          <input type="text" class="form-control" id="nama_konsumen" placeholder="Masukkan nama lengkap Konsumen" name="nama_konsumen">
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col">
           <label for="alamat" class="form-label">Alamat:</label>
-          <textarea class="form-control" placeholder="Masukkan alamat konsumen" id="alamat"></textarea>
+          <textarea class="form-control" placeholder="Masukkan alamat konsumen" id="alamat" name="alamat"></textarea>
         </div>
         <div class="col">
           <label for="handphone" class="form-label">Handphone:</label>
-          <input type="text" class="form-control" id="handphone" placeholder="Masukkan no HP konsumen">
+          <input type="text" class="form-control" id="handphone" placeholder="Masukkan no HP konsumen" name="handphone">
         </div>
       </div>
       <br>
