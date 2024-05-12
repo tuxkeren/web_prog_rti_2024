@@ -77,8 +77,8 @@
             <td><?php echo $prod->product_name; ?></td>
             <td><?php echo number_format($prod->price); ?></td>
             <td>
-                <a class="btn btn-warning" href="">Update</a>
-                <a class="btn btn-danger" href="">Hapus</a>
+                <a class="btn btn-warning" href=<?php echo "product_edit.php?id=".$prod->id ?>>Update</a>
+                <a class="btn btn-danger" href=<?php echo "product_delete.php?id=".$prod->id ?>>Hapus</a>
             </td>
             </tr>
         </tbody>
