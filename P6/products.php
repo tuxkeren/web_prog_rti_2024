@@ -71,7 +71,7 @@
             <tr>
             <th scope="row"><?php echo $prod->id; ?></th>
             <td>
-                <img class="rounded" src="<?php echo $prod->picture; ?>" height="200px" width="200px">
+                <img class="rounded" src="<?php echo "images/produk/".$prod->picture; ?>" height="200px" width="200px">
             </td>
             <td><?php echo $prod->barcode; ?></td>
             <td><?php echo $prod->product_name; ?></td>
