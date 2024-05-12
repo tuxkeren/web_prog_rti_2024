@@ -43,8 +43,8 @@
         <thead>
             <tr>
             <th scope="col">No</th> 
-            <th scope="col">Kode Barang</th>
             <th scope="col">&nbsp;</th>
+            <th scope="col">Kode Barang</th>
             <th scope="col">Barcode</th>
             <th scope="col">Nama Produk</th>
             <th scope="col">Harga</th>
@@ -72,10 +72,10 @@
         <tbody>
             <tr>
             <th scope="row"><?php echo $no; ?></th>
-            <th scope="row"><?php echo $prod->id; ?></th>
             <td>
                 <img class="rounded" src="<?php echo "images/produk/".$prod->picture; ?>" height="200px" width="200px">
             </td>
+            <td><?php echo $prod->id; ?></td>
             <td><?php echo $prod->barcode; ?></td>
             <td><?php echo $prod->product_name; ?></td>
             <td><?php echo number_format($prod->price); ?></td>
@@ -86,7 +86,11 @@
             </tr>
         </tbody>
         <?php
-               $no++;   } 
+               $no++;}
+            }else{
+              echo "<tr>";
+              echo "<td colspan=\"7\" align=\"center\" style=\"color:red\"> Data belum ada di Database</td>";
+              echo "</tr>";
             }
         ?>
         </table>

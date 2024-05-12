@@ -42,11 +42,12 @@
     <table class="table table-hover">
         <thead>
             <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Nama Kosumen</th>
-            <th scope="col">Alamat</th>
-            <th scope="col">Handphone</th>
-            <th scope="col">Aksi</th>
+              <th scope="col">No</th>
+              <th scope="col">Kode Konsumen</th>
+              <th scope="col">Nama Kosumen</th>
+              <th scope="col">Alamat</th>
+              <th scope="col">Handphone</th>
+              <th scope="col">Aksi</th>
             </tr>
         </thead>
         <?php
@@ -63,23 +64,30 @@
                         die('Query error['. $db->error.']');
                     }
 
+                    $no = 1;
                     while ($cust = $hasil -> fetch_object())
                     {      
         ?>
         <tbody>
             <tr>
-            <th scope="row"><?php echo $cust->id; ?></th>
-            <td><?php echo $cust->cust_name; ?></td>
-            <td><?php echo $cust->address; ?></td>
-            <td><?php echo $cust->phone; ?></td>
-            <td>
-                <a class="btn btn-warning" href="">Update</a>
-                <a class="btn btn-danger" href="">Hapus</a>
-            </td>
+              <th scope="row"><?php echo $no; ?></th>
+              <td><?php echo $cust->id; ?></td>
+              <td><?php echo $cust->cust_name; ?></td>
+              <td><?php echo $cust->address; ?></td>
+              <td><?php echo $cust->phone; ?></td>
+              <td>
+                  <a class="btn btn-warning" href="customer_edit.php?id=<?php echo $cust->id; ?>">Update</a>
+                  <a class="btn btn-danger" href="customer_delete.php?id=<?php echo $cust->id; ?>">Hapus</a>
+              </td>
             </tr>
         </tbody>
         <?php
+              $no++;
                   } 
+            }else{
+              echo "<tr>";
+              echo "<td colspan=\"7\" align=\"center\" style=\"color:red\"> Data belum ada di Database</td>";
+              echo "</tr>";
             }
         ?>
         </table>
