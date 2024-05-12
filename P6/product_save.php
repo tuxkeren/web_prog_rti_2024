@@ -24,6 +24,8 @@
             $stat->execute();
             $db->close();
 
+    }else{
+        echo "Ada kesalahan, mungkin type file dll.";
     }
     
 
