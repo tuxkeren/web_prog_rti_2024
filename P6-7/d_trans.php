@@ -17,39 +17,22 @@
     </nav>
     <main class="container">
         <div class="bg-body-tertiary p-5 rounded">
+            <table class="table table-striped">
+                <tr>
+                    <td width="30px">No. Faktor</td><td width="30px">:</td><td>...</td>
+                </tr>
+                <tr>
+                    <td>Tanggal</td><td>:</td><td>...</td>
+                </tr>
+                <tr>
+                    <td>Konsumen</td><td>:</td><td>...</td>
+                </tr>
+            </table>
             <form action="header_save.php" method="post">
                 <div class="row">
                     <div class="col">
                         <label for="tanggal" class="form-label">Tanggal:</label>
                         <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?php echo date("Y/m/d") ?>">
-                    </div>
-                    <div class="col">
-                        <label for="konsumen" class="form-label">Konsumen:</label>
-                        <select class="form-select" aria-label="Default select example" name="konsumen">
-                            <option selected>Pilih Konsumen</option>
-                            <?php 
-                            
-                                include('lib/koneksi.php');
-
-                                $qry ="SELECT * FROM customers";
-                                $check = $db->query($qry) or die($db->error.__LINE__);
-                                if($check -> num_rows > 0){
-                                    $sql = "SELECT * FROM customers";
-                                    if(!$hasil = $db->query($sql))
-                                    {
-                                        die('Query error['.$db->error.']');
-                                    }
-                                    while($cust = $hasil->fetch_object()){
-                            
-                            ?>
-                                <option value="<?php echo $cust->id; ?>">
-                                    <?php echo $cust->cust_name; ?>
-                                </option>
-                            <?php 
-                                    }
-                                } 
-                            ?>
-                        </select>
                     </div>
                 </div>
                 <br>
