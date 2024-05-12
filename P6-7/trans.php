@@ -15,9 +15,27 @@
             </button>
         </div>
     </nav>
-    <div class="container">
-        <h1>Test</h1>
-    </div>
+    <main class="container">
+        <div class="bg-body-tertiary p-5 rounded">
+            <form action="header_save.php" method="post">
+                <div class="row">
+                    <div class="col">
+                        <label for="barcode" class="form-label">Barcode:</label>
+                        <input type="text" class="form-control" id="barcode" placeholder="Masukkan barcode barang" name="barcode">
+                    </div>
+                    <div class="col">
+                        <label for="barcode" class="form-label">Barcode:</label>
+                        <input type="text" class="form-control" id="barcode" placeholder="Masukkan barcode barang" name="barcode">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" value="Seterusnya...">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
